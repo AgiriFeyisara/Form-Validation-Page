@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-size: cover;
+  font-family: "poppins", sans-serif;
+  font-size: 16px;
+}
+body {
+  background: hsl(0, 100%, 74%) url("/images/background1.png");
+  background-position: center;
+  max-height: 100%;
+}
+.signup-container {
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+  gap: 80px;
+  justify-content: center;
+}
+.left-container {
+  color: #fff;
+}
+.right-container {
+  margin-bottom: 40px;
+}
+.heading {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.text {
+  line-height: 28px;
+}
+.btn1 {
+  padding: 17px 87px;
+  margin-bottom: 17px;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  background-color: hsl(248, 32%, 49%);
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 150ms ease;
+}
+form {
+  background-color: #fff;
+  width: 100%;
+  max-width: 450px;
+  padding: 10px 30px 30px;
+  text-align: center;
+  border-radius: 7px;
+}
+.input-field {
+  background: #eaeaea;
+  margin: 15px 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  max-height: 65px;
+  overflow: hidden;
+  transition: 150ms ease;
+  position: relative;
+}
+input {
+  width: 100%;
+  background: white;
+  padding: 16px 15px;
+  border: 1px solid hsl(246, 25%, 77%);
+  outline: 0;
+  transition: 150ms ease;
+  border-radius: 5px;
+}
+input:focus {
+  border: 2px solid black;
+}
+input::placeholder {
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.error-icon {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: hsl(0, 100%, 74%);
+}
+.input-field .error-icon {
+  display: none;
+}
+
+.input-field.error .error-icon {
+  display: block;
+}
+
+.btn2 {
+  padding: 15px 15px;
+  width: 100%;
+  background-color: hsl(154, 59%, 51%);
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 18px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 150ms ease;
+}
+.btn-text {
+  font-size: 12px;
+  color: hsl(246, 25%, 77%);
+  margin-top: 10px;
+}
+.terms {
+  color: hsl(0, 100%, 74%);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+input.invalid::placeholder {
+  color: hsl(0, 100%, 74%);
+}
+input#email:focus {
+  border-color: black !important;
+  border-width: 2px;
+}
+.input-error {
+  border: 2px solid hsl(0, 100%, 74%);
+}
+
+.error-message {
+  color: hsl(0, 100%, 74%);
+  font-size: 12px;
+  display: none;
+  text-align: right;
+  font-style: italic;
+  margin-top: -5px;
+}
