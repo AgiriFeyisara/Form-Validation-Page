@@ -7,7 +7,8 @@
   font-size: 16px;
 }
 body {
-  background: hsl(0, 100%, 74%) url("/images/background1.png?v=1'");
+  background-image: url("/images/background1.png");
+  background-color: hsl(0, 100%, 74%);
   background-position: center;
   max-height: 100%;
 }
